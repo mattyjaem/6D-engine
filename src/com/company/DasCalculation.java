@@ -9,7 +9,7 @@ public class DasCalculation {
     static double calculatePosY(double[] ViewPoint, double[] View, double x , double y, double z){ //for calculating the position of Y. The clue is still in the name ya dingus
         setStuff(ViewPoint, View, x, y, z);
         return DrawThingY;
-    }
+    }//works off standard vector calculations. Found somewhere on the internet not really sure. 
     static void setStuff(double[] ViewPoint, double[] View, double x, double y, double z){
     Vector ViewVector = new Vector(View[0]-ViewPoint[0],View[1]-ViewPoint[1],View[2]-ViewPoint[2] );
     Vector DirectionVector= new Vector(1,1,1);
