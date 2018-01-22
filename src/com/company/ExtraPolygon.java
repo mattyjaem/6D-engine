@@ -16,7 +16,7 @@ public class ExtraPolygon {
     void makeEinPoly(){ //method for constructing new polygons
             double[] newX = new double[x.length]; //array for Xpos dependent on points in x
             double[] newY = new double[x.length]; //same but for Y. whooo would have BELIEVED IT
-            for (int i=0; i<x.length; i++ ){// for each pass, newX changed into CalcX. I think it is named calcX. Not sure. Cba. I am bored. what is life?
+            for (int i=0; i<x.length; i++ ){// for each pass, newX changed into CalcX.
                 newX[i] = 500 + 50* DasCalculation.calculatePosX(Screen.ViewPoint,Screen.View,x[i],y[i],z[i]);
                 newY[i] = 500 + 50* DasCalculation.calculatePosY(Screen.ViewPoint,Screen.View,x[i],y[i],z[i]);
             }
