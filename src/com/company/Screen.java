@@ -28,7 +28,7 @@ public class Screen extends JPanel implements KeyListener{
             PolyDraw[i].drawPolygon(g);
             timer();
     }
-    void timer(){
+    void timer(){ //used for calculting the on screen program timer.
         while(true){
             if((System.currentTimeMillis()-LastRefresh)> sleep){
                 LastRefresh = System.currentTimeMillis();
@@ -46,7 +46,7 @@ public class Screen extends JPanel implements KeyListener{
 // this section deals with our key inputs for manipulating the camera positions. Deal with it.
 
     public void keyTyped(KeyEvent e) {
-        if(e.getKeyCode() == KeyEvent.VK_LEFT){
+        if(e.getKeyCode() == KeyEvent.VK_LEFT){ //sets the viewpoint based on inputs. In this case the Left arrow moves the viewpoint via a negative movement of the Viewpoint. 
             ViewPoint[0] --;
         }
         if(e.getKeyCode() == KeyEvent.VK_RIGHT){
